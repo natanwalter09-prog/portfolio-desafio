@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Natan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="https://www.linkedin.com/in/natan-walter-398a51158/" target="_blank">Linkedin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+            Sou estudante de desenvolvimento e estou construindo minha base em front-end e back-end, buscando evoluir
+            para uma atuação mais completa na área de tecnologia.
+        </p>
+        <br>
+        <p>Como próximo passo, meu objetivo é aprofundar meus conhecimentos em back-end, entendendo com mais
+            profundidade a comunicação entre cliente e servidor, modelagem de banco de dados e construção de APIs.
+            Acredito que fortalecer essa base técnica me permitirá desenvolver projetos mais completos, escaláveis e bem
+            estruturados.</p>
+        <br>
+        <p>Busco evoluir para uma atuação mais ampla, integrando front-end e back-end, ampliando minha visão sistêmica e
+            me preparando para atuar de forma versátil no mercado de tecnologia.</p>
+    </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <br>
+        <p>Landing page desenvolvida com HTML e CSS.</p>
+      </div>
+
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <br>
+        <p>Aplicação simples com JavaScript.</p>
+      </div>
+
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <br>
+        <p>API básica utilizando Node.js.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Me chame para a turma de 300h!</h2>
+    <form>
+      <select name="assunto">
+        <option value="orcamento">Selecionar mensagem</option>
+        <option value="orcamento">Você passou para a turma de back end!</option>
+        <option value="parceria" aria-placeholder="Resultado">Não foi dessa vez :(</option>
+      </select>
+
+      <textarea name="mensagem" placeholder="Resultado do curso de 300h"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 - Desenvolvido por Natan</p>
+  </footer>
+
+  <script>
+  const formulario = document.getElementById("contato");
+
+  formulario.addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Mensagem enviada!");
+  });
+</script>
+</body>
+
+</body>
+</html>
